@@ -222,4 +222,71 @@
        [  67,   16, 1681,  222],
        [  76,   21,  140, 1763]]), 'best_params': {'classifier__C': 1.0, 'classifier__kernel': 'rbf'}, 'time': 37852.37515950203}
 
+#### no ner
+
+{'accuracy': 0.89525, 'f1': 0.895001463911527, 'precision': 0.8949747612660592, 'recall': 0.89525, 'confusion_matrix': array([[1812,   78,  100,   57],
+       [  22, 1916,   15,   14],
+       [  67,   16, 1698,  205],
+       [  87,   19,  158, 1736]]), 'best_params': {'classifier__C': 10.0, 'classifier__kernel': 'rbf'}, 'time': 84298.38023805618}
+
+### XGB
+
+#### all features
+
+{'accuracy': 0.879875, 'f1': 0.8796957852986587, 'precision': 0.8798308810890988, 'recall': 0.879875, 'confusion_matrix': array([[1779,   86,  107,   75],
+       [  31, 1878,   27,   31],
+       [  77,   20, 1669,  220],
+       [  86,   43,  158, 1713]]), 'best_params': {'classifier__max_depth': 3, 'classifier__n_estimators': 300}, 'time': 2173.538975954056}
+
+#### text and tokens
+
+{'accuracy': 0.889875, 'f1': 0.8896889433718994, 'precision': 0.8896829855461148, 'recall': 0.889875, 'confusion_matrix': array([[1809,   75,   98,   65],
+       [  31, 1889,   22,   25],
+       [  78,   17, 1701,  190],
+       [  74,   43,  163, 1720]]), 'best_params': {'classifier__max_depth': 9, 'classifier__n_estimators': 300}, 'time': 1788.5012366771698}
+
+#### entities
+
+{'accuracy': 0.283, 'f1': 0.1693506519156022, 'precision': 0.40631212870134764, 'recall': 0.283, 'confusion_matrix': array([[   9, 2000,   10,   28],
+       [   0, 1932,    5,   30],
+       [   3, 1869,   17,   97],
+       [   9, 1654,   31,  306]]), 'best_params': {'classifier__max_depth': 7, 'classifier__n_estimators': 200}, 'time': 309.3082902431488}
+
+#### embeddings
+
+{'accuracy': 0.879875, 'f1': 0.8797589184132585, 'precision': 0.8800661984682107, 'recall': 0.879875, 'confusion_matrix': array([[1768,   84,  114,   81],
+       [  30, 1875,   26,   36],
+       [  74,   26, 1676,  210],
+       [  78,   40,  162, 1720]]), 'best_params': {'classifier__max_depth': 3, 'classifier__n_estimators': 300}, 'time': 640.9990811347961}
+
+#### no ner
+
+{'accuracy': 0.879375, 'f1': 0.8793133841927336, 'precision': 0.879578101654579, 'recall': 0.879375, 'confusion_matrix': array([[1768,   82,  107,   90],
+       [  32, 1868,   28,   39],
+       [  75,   22, 1683,  206],
+       [  87,   38,  159, 1716]]), 'best_params': {'classifier__max_depth': 3, 'classifier__n_estimators': 300}, 'time': 1864.937325000763}
+
+### Gradient Boosting
+
+#### all features
+
+{'accuracy': 0.889375, 'f1': 0.8893318724844647, 'precision': 0.8895746440883865, 'recall': 0.889375, 'confusion_matrix': array([[1793,   73,  114,   67],
+       [  30, 1889,   23,   25],
+       [  65,   16, 1688,  217],
+       [  81,   23,  151, 1745]]), 'best_params': {'classifier__learning_rate': 0.5, 'classifier__max_depth': 7, 'classifier__n_estimators': 200}, 'time': 38298.37958574295}
+
+#### text and tokens
+
+{'accuracy': 0.882375, 'f1': 0.8824304083678229, 'precision': 0.8826802234037825, 'recall': 0.882375, 'confusion_matrix': array([[1787,   76,  111,   73],
+       [  34, 1865,   22,   46],
+       [  74,   17, 1692,  203],
+       [  81,   29,  175, 1715]]), 'best_params': {'classifier__learning_rate': 0.5, 'classifier__max_depth': 7, 'classifier__n_estimators': 200}, 'time': 21522.156162261963}
+
+#### entities
+
+{'accuracy': 0.287125, 'f1': 0.1776619746958957, 'precision': 0.46855574898943847, 'recall': 0.287125, 'confusion_matrix': array([[  19, 1989,   11,   28],
+       [   4, 1926,    5,   32],
+       [   4, 1853,   28,  101],
+       [   6, 1637,   33,  324]]), 'best_params': {'classifier__learning_rate': 0.5, 'classifier__max_depth': 7, 'classifier__n_estimators': 200}, 'time': 3111.5610868930817}
+
 
