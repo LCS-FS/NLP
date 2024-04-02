@@ -289,4 +289,54 @@
        [   4, 1853,   28,  101],
        [   6, 1637,   33,  324]]), 'best_params': {'classifier__learning_rate': 0.5, 'classifier__max_depth': 7, 'classifier__n_estimators': 200}, 'time': 3111.5610868930817}
 
+#### embeddings
+
+{'accuracy': 0.888125, 'f1': 0.8880853050658054, 'precision': 0.8882248864527428, 'recall': 0.888125, 'confusion_matrix': array([[1796,   72,  107,   72],
+       [  28, 1881,   24,   34],
+       [  82,   16, 1687,  201],
+       [  83,   23,  153, 1741]]), 'best_params': {'classifier__learning_rate': 0.5, 'classifier__max_depth': 7, 'classifier__n_estimators': 200}, 'time': 13594.830219984055
+
+#### no ner
+
+{'accuracy': 0.890375, 'f1': 0.8904402125673976, 'precision': 0.89066990961579, 'recall': 0.890375, 'confusion_matrix': array([[1802,   69,  108,   68],
+       [  27, 1876,   24,   40],
+       [  69,   15, 1708,  194],
+       [  85,   20,  158, 1737]]), 'best_params': {'classifier__learning_rate': 0.5, 'classifier__max_depth': 7, 'classifier__n_estimators': 200}, 'time': 36412.36061453819}
+
+### KNN
+
+#### all features
+
+{'accuracy': 0.762625, 'f1': 0.7673469841529388, 'precision': 0.7866734835266325, 'recall': 0.762625, 'confusion_matrix': array([[1448,   84,  303,  212],
+       [  35, 1543,  226,  163],
+       [  59,   35, 1571,  321],
+       [  35,   43,  383, 1539]]), 'best_params': {'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}, 'time': 2870.770982980728}
+
+#### text and tokens
+
+{'accuracy': 0.758625, 'f1': 0.7583425521502631, 'precision': 0.7629908305247882, 'recall': 0.758625, 'confusion_matrix': array([[1575,  222,  130,  120],
+       [  97, 1677,   95,   98],
+       [ 107,  190, 1425,  264],
+       [  88,  288,  232, 1392]]), 'best_params': {'classifier__n_neighbors': 3, 'classifier__p': 2, 'classifier__weights': 'distance'}, 'time': 848.4009869098663}
+
+#### entities
+
+{'accuracy': 0.298625, 'f1': 0.19761538108636206, 'precision': 0.4944834609746845, 'recall': 0.298625, 'confusion_matrix': array([[  41, 1961,   12,   33],
+       [   4, 1922,    5,   36],
+       [  10, 1820,   48,  108],
+       [  17, 1565,   40,  378]]), 'best_params': {'classifier__n_neighbors': 10, 'classifier__p': 1, 'classifier__weights': 'distance'}, 'time': 57.33431363105774}
+
+#### embeddings
+
+{'accuracy': 0.731375, 'f1': 0.738086076791361, 'precision': 0.7634038935294689, 'recall': 0.731375, 'confusion_matrix': array([[1397,   83,  268,  299],
+       [  35, 1487,  237,  208],
+       [  48,   33, 1476,  429],
+       [  36,   44,  429, 1491]]), 'best_params': {'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}, 'time': 1120.252287387848}
+
+#### no ner
+
+{'accuracy': 0.762875, 'f1': 0.7673840699877303, 'precision': 0.7859856251495667, 'recall': 0.762875, 'confusion_matrix': array([[1446,   86,  304,  211],
+       [  35, 1549,  221,  162],
+       [  60,   37, 1571,  318],
+       [  38,   47,  378, 1537]]), 'best_params': {'classifier__n_neighbors': 5, 'classifier__p': 2, 'classifier__weights': 'distance'}, 'time': 2795.042200088501}
 
