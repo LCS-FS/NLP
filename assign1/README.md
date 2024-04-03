@@ -9,7 +9,7 @@
 | Lucas Sousa | 202004682 |
 
 ## Dataset
-The dataset can be found [here](https://www.kaggle.com/datasets/vrindakallu/ag-news-topic-classification)
+The original dataset can be found [here](https://www.kaggle.com/datasets/vrindakallu/ag-news-topic-classification)
 
 ## Execution
 
@@ -19,6 +19,8 @@ Order:
 - eval.ipynb (for testing models using count Vectorizer and TF-IDF Vectorizer, as well as preparing the best models for error analysis)
 - filter.py
 - embeds_analysis.ipynb
+- counttfidf.ipynb
 
 *Note 1: Due to the extensive size of the training dataset, only a third of it was used (40000 balanced entries)*
-*Note 2: Execution of the preprocessing and eval notebooks requires several Gigabytes of RAM and storage, as well as several days of runtime*
+
+*Note 2: Execution of the preprocessing notebook requires several Gigabytes of RAM and storage, as well as several days of runtime*
